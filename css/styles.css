@@ -1,0 +1,370 @@
+/* Reset básico */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, Arial, sans-serif; }
+
+
+/* HEADER */
+
+/* Navbar */
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #070001  ;
+    color: #111;
+    padding: 0 1rem 0 1rem;
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.navegacion-menu {
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    margin: 1.2rem;
+}
+
+.navegacion-menu a {
+    text-decoration: none;
+    padding: 0 .5rem;
+    color: white;
+    font-weight: 600;
+}
+
+.navegacion-menu a:hover {
+    background-color: black;
+    padding: .75rem;
+    border-radius: 1rem;
+    transition: background 0.2s;
+}
+
+/* SECTION PRESENTACION */
+
+.presentacion {
+    background-color: #33605a   ;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentacion-nombre,
+.presentacion-puesto,
+.presentacion-descripcion {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.presentacion-nombre{
+    margin: 2rem 0 2rem 0;
+}
+
+.presentacion-imagen{
+    border-radius: 50%;
+    width: 25rem;
+    border: .25rem white solid
+}
+
+.presentacion-puesto {
+    margin: 2rem 0 2rem 0;
+}
+
+.presentacion-descripcion {
+    margin: 2rem 0 5rem 0;
+}
+
+/* SECCION BOTONES */
+
+.direcciones {
+    background-color: #aeced2  ;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.direcciones-boton {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 13px 23px;
+    border: 1px solid #222222;
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+    background: #fff;
+    color: #222222;  
+    margin: 0 1rem 0 1rem;
+}
+
+.direcciones-boton:hover{
+    border-color: #000000;
+    background: #f7f7f7;
+}
+
+
+/* HABILIDADES */
+
+.Habilidad-contenedor {
+    background-color: #e9f2f9;
+    padding: 5rem 0;
+}
+
+.Habilidades-grid {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto
+}
+
+.Habilidades {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5rem;
+}
+
+/* PROYECTOS */
+
+.Proyectos-contenedor{
+    background-color: #aeced2;
+    padding: 5rem 0;
+}
+
+.Proyectos-width{
+    max-width: 120rem;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.Proyectos-width__titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Proyectos-width__titulo h3{
+    margin: 0 0 2rem 5rem;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.Proyectos-width__titulo a{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #070001;
+    margin: 3rem 0 1rem 0;
+    
+}
+
+.Proyectos-listados{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+}
+
+.Proyectos-modelo{
+    background-color: #e9f2f9;
+    padding: 4rem;
+    border-radius: 2rem;
+}
+
+.Proyectos-modelo h4{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.Proyectos-modelo img{
+    padding: 2rem 0 2rem 0;
+    width: 100%;
+    transition-property: transform background-size;
+    transition-duration: 300ms;
+}
+
+.Proyectos-modelo img:hover{
+    transform: scale(1.2);
+}
+
+.Proyectos-modelo p{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* CONTACTO */
+.Contacto-contenedor{
+    padding: 3rem 2rem;
+    background-color: #e9f2f9;
+}
+
+.Contacto-contenedor h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 4rem;
+}
+
+/* Layout */
+.contacto-flex{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+/* ===== FORMULARIO ===== */
+#contact-form{
+    background: #fff;
+    padding: 3rem;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.form-group{
+    margin-bottom: 2rem;
+}
+
+.form-control{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 1.4rem;
+    outline: none;
+    transition: border .2s, box-shadow .2s;
+}
+
+.form-control:focus{
+    border-color: #070001;
+    box-shadow: 0 0 0 2px rgba(7,0,1,.1);
+}
+
+/* Textarea */
+textarea.form-control{
+    resize: none;
+    margin-bottom: 2rem;
+}
+
+/* Botón */
+#contact-form .direcciones-boton{
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* ===== INFO DE CONTACTO ===== */
+.direct-contact-container{
+    display: flex;
+    align-items: center;
+}
+
+.Contacto-info{
+    list-style: none;
+    background: #070001;
+    color: #fff;
+    padding: 3rem;
+    border-radius: 14px;
+    width: 100%;
+}
+
+.Contacto-item{
+    margin-bottom: 1.8rem;
+    font-size: 1.4rem;
+}
+
+.Contacto-item:last-child{
+    margin-bottom: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px){
+    .contacto-flex{
+        grid-template-columns: 1fr;
+    }
+
+    .direct-contact-container{
+        justify-content: center;
+    }
+}
+
+
+
+/* FOOTER */
+.footer{
+    background-color: #aeced2;
+}
+
+.footer p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 3rem 0;
+}
+
+
+/* LISTA PROYECTOS */
+
+.Proyectos-modelo__presentacion{
+    background-color: #e9f2f9;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    max-width: 120rem;
+    width: 100%;
+    border-radius: 2rem;
+
+}
+
+.Proyectos-modelo__presentacion h4{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.Proyectos-modelo__presentacion img{
+    padding: 2rem 0 2rem 0;
+    width: 100%;
+    transition-property: transform background-size;
+    transition-duration: 300ms;
+}
+
+.Proyectos-modelo__presentacion img:hover{
+    transform: scale(1.040);
+}
+
+.Proyectos-modelo__presentacion p{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+.proyecto-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; 
+}
+
+.proyecto-descripcion {
+
+}
+
+.proyecto-descripcion p {
+    margin-bottom: 2rem;
+}
+
+.proyecto-descripcion li {
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+
+
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navegacion">
+            <a class="logo" href="#">Mi Portafolio</a>
+            <ul class="navegacion-menu">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="/lista-proyectos.html">Proyectos</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="presentacion">
+            <h1 class="presentacion-nombre">Alan Lopez Garza</h1>
+            <img src="/public/img/Snake.jpg" alt="imagen de CV" class="presentacion-imagen">
+            <h2 class="presentacion-puesto">Ingeniero en Ssitemas Computacionales</h2>
+            <p class="presentacion-descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo dolorem dicta minima repudiandae culpa consequuntur incidunt ducimus totam vero velit.</p>
+        </div>
+    </section>
+    <section>
+    <div class="direcciones">
+        <a 
+            href="/public/pdf/CV_ALAN-LOPEZ-GARZA.pdf"
+            download
+            class="direcciones-boton"
+        >
+            CV
+        </a>
+        <a 
+            href="https://github.com/Alanlg08"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="direcciones-boton"
+        >
+            GitHub
+        </a>
+        <a 
+            href="https://www.linkedin.com/in/alan-lópez-garza-b34406315"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="direcciones-boton"
+        >
+            LinkedIn
+        </a>
+    </div>
+    </section>
+    <section class="Habilidad-contenedor">
+        <div class="Habilidades-grid">
+            <div class="Habilidades">
+                <div class="Habilidad">
+                    <img src="" alt="">
+                    <h3>Back-end</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consequuntur nam a repudiandae maiores animi doloremque voluptatum quas, eos ipsam!</p>
+                </div>
+                <div class="Habilidad">
+                    <img src="" alt="">
+                    <h3>Front-end</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, inventore quis voluptate expedita magnam id accusamus nobis provident quisquam tempora?</p>
+                </div>
+                <div class="Habilidad">
+                    <img src="" alt="">
+                    <h3>Redes y Mantenimiento</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ad eligendi atque accusantium. Placeat, in mollitia et atque libero blanditiis!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="Proyectos-contenedor">
+        <div class="Proyectos-width">
+            <div class="Proyectos-width__titulo">
+                <h3>Proyectos</h3>
+                <a href="/lista-proyectos.html">Ver mas proyectos ----></a>
+            </div>
+            <div class="Proyectos-listados">
+                <div class="Proyectos-modelo">
+                    <h4>Administrador de citas</h4>
+                    <a href="https://administradorcitasmascotas.netlify.app" target="_blank">
+                        <img src="/public/img/AdministradorDeCitas.png" alt="imagen proyecto">
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eveniet?</p>
+                </div>
+                <div class="Proyectos-modelo">
+                    <h4>Planificadora de Gastos</h4>
+                    <a href="https://administradorcitasmascotas.netlify.app" target="_blank">
+                        <img src="/public/img/CalculadoraPresupuestos.png" alt="imagen proyecto">
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eveniet?</p>                
+                </div>
+                <div class="Proyectos-modelo">
+                    <h4>Contador de calorias</h4>
+                    <a href="https://administradorcitasmascotas.netlify.app" target="_blank">
+                        <img src="/public/img/ContadoraCalorias.png" alt="imagen proyecto">
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eveniet?</p>                
+                </div>
+                <div class="Proyectos-modelo">
+                    <h4>Devstagram</h4>
+                    <a href="https://administradorcitasmascotas.netlify.app" target="_blank">
+                        <img src="/public/img/Devsagram.png" alt="imagen proyecto">
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eveniet?</p>                
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="Contacto-contenedor">
+        <h1>Contacto</h1>
+        <div class="contacto-flex">
+            <!-- PARTE IZQUIERDA -->
+            <form id="contact-form" class="form-horizontal" role="form">
+
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" id="name" placeholder="Nombre" name="name" value="" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="email" class="form-control" id="email" placeholder="Correo" name="email" value="" required>
+                    </div>
+                </div>
+
+                <textarea class="form-control" rows="10" placeholder="Mensaje" name="message" required></textarea>
+
+                <button class="direcciones-boton" id="submit" type="submit" value="SEND">
+                    Enviar
+                </button>
+
+            </form>
+            <!-- PARTE DERECHA -->
+            <div class="direct-contact-container">
+
+                <ul class="Contacto-info">
+                    <li class="Contacto-item">Gomez Palacio, Durango.</li>
+                    <li class="Contacto-item">(871) 233 5799</li>
+                    <li class="Contacto-item">alan.8.6.2001@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
