@@ -1,10 +1,16 @@
 /* Reset básico */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: system-ui, Arial, sans-serif; }
 
-html { scroll-behavior: smooth; }
+*, *::before, *::after{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0; 
+  padding: 0;
+}
 
-/* HEADER */
+html, body{
+  overflow-x: hidden;
+  font-family: system-ui, Arial, sans-serif;
+}
 
 /* Navbar */
 
@@ -405,7 +411,7 @@ textarea.form-control{
     list-style: none;
     background: #070001;
     color: #fff;
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 14px;
     width: 100%;
     display: flex;
@@ -416,7 +422,7 @@ textarea.form-control{
     display: inline-flex;
     gap: 1rem;
     margin-bottom: 1.8rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .Contacto-item:last-child{
@@ -462,8 +468,7 @@ textarea.form-control{
 
     #contact-form .direcciones-boton{
         width: 100%;
-        padding: 1rem;
-        font-size: 1.2rem;
+        max-width: 60%;
     }
 }
 
@@ -550,3 +555,40 @@ textarea.form-control{
 }
 
 
+
+
+@media (max-width: 450px){
+
+  .Contacto-contenedor{
+    padding: 2rem 1rem; /* menos padding lateral */
+  }
+
+  .contacto-flex{
+    width: 100%;
+    grid-template-columns: 1fr; /* una columna */
+    gap: 1.5rem;
+  }
+
+  #contact-form{
+    width: 100%;
+    max-width: 100%;
+    padding: 1.2rem; /* más compacto */
+  }
+
+  /* Inputs y textarea nunca se salen */
+  .form-control,
+  textarea.form-control{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  textarea.form-control{
+    min-height: 120px; /* más bajo en 350px */
+  }
+
+  /* Si tu botón es un <a> o <button> */
+  #contact-form .direcciones-boton{
+    width: 100%;
+    max-width: 60%;
+  }
+}
