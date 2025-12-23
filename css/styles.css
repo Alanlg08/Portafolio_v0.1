@@ -431,6 +431,7 @@ textarea.form-control{
 }
 
 /* ===== RESPONSIVE ===== */
+
 @media (max-width: 768px){
     .contacto-flex{
         grid-template-columns: 1fr;
@@ -438,6 +439,31 @@ textarea.form-control{
 
     .direct-contact-container{
         justify-content: center;
+    }
+
+    #contact-form{
+        padding: 1.5rem;
+    }
+
+    .form-control{
+        font-size: 1.1rem;
+        padding: 0.9rem 1rem;
+        border-radius: 10px;
+    }
+
+    .form-group{
+        margin-bottom: 1.2rem;
+    }
+
+    textarea.form-control{
+        min-height: 140px; 
+    }
+
+
+    #contact-form .direcciones-boton{
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.2rem;
     }
 }
 
