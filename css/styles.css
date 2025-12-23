@@ -85,6 +85,30 @@ html { scroll-behavior: smooth; }
     text-align: center;
 }
 
+@media(max-width: 760px){
+    .presentacion-nombre{
+        margin: 2rem 0 2rem 0;
+    }
+
+    .presentacion-imagen{
+        border-radius: 50%;
+        max-width: 120rem;
+        max-width: 80%;
+        border: .25rem white solid
+    }
+
+    .presentacion-puesto {
+        text-align: center;        
+    }
+
+    .presentacion-descripcion {
+        margin: 2rem 0 5rem 0;
+        max-width: 120rem;
+        width: 80%;
+        text-align: center;
+    }
+}
+
 /* SECCION BOTONES */
 
 .direcciones {
@@ -127,6 +151,20 @@ html { scroll-behavior: smooth; }
   height: 26px;
   flex-shrink: 0;
   display: block;
+}
+
+@media(max-width: 760px){
+    .direcciones{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .direcciones-boton{
+        flex-direction: column;
+        max-width: 120rem;
+        width: 40%;
+    }
 }
 
 
@@ -183,6 +221,12 @@ html { scroll-behavior: smooth; }
   top: 0;    
 }
 
+@media(max-width: 760px){
+    .Habilidades{
+        grid-template-columns: repeat(1,3fr);
+    }
+}
+
 /* PROYECTOS */
 
 .Proyectos-contenedor{
@@ -203,9 +247,10 @@ html { scroll-behavior: smooth; }
 }
 
 .Proyectos-width__titulo h3{
-    margin: 0 0 2rem 5rem;
+    text-align: center;
     font-size: 3rem;
     font-weight: 800;
+    margin-bottom: 2rem;
 }
 
 .Proyectos-width__titulo a{
@@ -252,6 +297,29 @@ html { scroll-behavior: smooth; }
     font-size: 1rem;
     text-align: justify;
     font-weight: 300;
+}
+
+@media(max-width: 760px){
+    .Proyectos-width__titulo{
+        flex-direction: column;
+    }
+
+    .Proyectos-width__titulo h4{
+
+    }   
+
+    .Proyectos-width__titulo a{
+        margin: 1rem 0 1rem 0;
+        text-align: center;
+    }
+
+    .Proyectos-listados{
+        grid-template-columns: repeat(1,4fr);
+    }    
+
+    .Proyectos-modelo p{
+        font-size: 1.35rem;
+    }
 }
 
 /* CONTACTO */
@@ -418,6 +486,19 @@ textarea.form-control{
   box-shadow: 0 18px 40px rgba(0,0,0,.14);
 }
 
+@media(max-width: 760px){
+    .Proyectos-modelo__presentacion{
+
+    }
+
+    .proyecto-grid{
+        grid-template-columns: repeat(1,2fr);
+    }
+
+    .proyecto-grid img{
+
+    }
+}
 
 .proyecto-descripcion p {
     margin-bottom: 2rem;
